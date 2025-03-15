@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //根据用户输入的行数，打印出每行递减的星号
+        var row = prompt('请输入行数');
+        var introw = parseInt(row);
+        var str = "";
+        for (var j = introw; j >= 1; j--) 
+        {
+            for (var i = 1; i <= j; i++) 
+            {
+                str += "★";
+            }
+            console.log(str);        
+            str = "\n";            
+        }       
+    </script>
+</head>
+<body>    
+</body>
+</html>
