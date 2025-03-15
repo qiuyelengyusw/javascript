@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //根据用户输入的行数和列数，打印出相应的星星
+        var row = prompt('请输入行数');
+        var introw = parseInt(row);
+        var slist =prompt('请输入列数');
+        var intslist = parseInt(slist);
+        var str = "";
+        for (var i = 1; i <= introw; i++)
+        {
+            for (var j = 1; j <= intslist; j++)
+            {
+                str += "★";
+            }
+            str += "\n";
+        }
+        alert(str);        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
