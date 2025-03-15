@@ -17,9 +17,14 @@
        {
            alert("小于5");
        }
+       //用户输入一个0-59之间的数字
+       //如果是0-9之间的数字，则在这个数字前面加0
+       //如果是10-59之间的数字，则直接显示
+       var time = prompt("请输入一个0-59之间的数字");
+       var result = time >= 0 && time <= 9 ? "0" + time : time;
+       alert(result);
     </script>
 </head>
-<body>
-    
+<body>    
 </body>
 </html>
