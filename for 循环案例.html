@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1、计算1-100之间所有数的平均值
+        var sum = 0;
+        for(var i = 1; i <= 100; i++)
+        {
+            sum += i;
+        }
+        var avg = sum / 100;
+        console.log(avg);
+        alert(avg);
+
+        //2、求1-100之间所有偶数的和
+        var sum1 = 0;
+        for(var i = 1; i <= 100; i++)
+        {
+            if(i % 2 == 0)
+            {
+                sum1 += i;
+            }
+        }
+        console.log(sum1);
+        alert("所有偶数的和为：" + sum1);
+        //3、求1-100之间所有奇数的和
+        var sum2 = 0;
+        for(var i = 1; i <= 100; i++)
+        {
+            if(i % 2 != 0)
+            {
+                sum2 += i;
+            }
+        }
+        console.log(sum2);
+        alert("所有奇数的和为：" + sum2);
+
+        //4、求1-100之间所有能被3整除的数的和
+        var sum3 = 0;
+        for(var i = 1; i <= 100; i++)
+        {
+            if(i % 3 == 0)
+            {
+                sum3 += i;
+            }
+        }
+        console.log(sum3);
+        alert("所有能被3整除的数的和为：" + sum3);
+        //5、同时计算1-100之间所有偶数和奇数的和
+        var sum4 = 0;
+        var sum5 = 0;
+        for(var i = 1; i <= 100; i ++)
+        {
+            if(i % 2 == 0)
+            {
+                sum4 += i;
+            } 
+            else
+            {
+                sum5 += i;
+            }
+        }
+        alert("所有偶数的和为：" + sum4);
+        alert("所有奇数的和为：" + sum5);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
